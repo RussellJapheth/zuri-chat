@@ -1,0 +1,14 @@
+{
+    "name": "russell/chat",
+    "type": "project",
+    "require": {
+        "mikecao/flight": "^2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Russell Japheth",
+            "email": "japheth.russell.i@gmail.com"
+        }
+    ]
+}

@@ -35,6 +35,6 @@ define('DATABASE_FILE', __DIR__ . '/data.json');
 
 if (!file_exists(DATABASE_FILE)) {
     $data = new stdClass();
-    $data->chats = [];
+    $data->chats = new stdClass();
     file_put_contents(DATABASE_FILE, json_encode($data));
 }

@@ -1,0 +1,33 @@
+{% extends "base.twig" %}
+{% block content %}
+    <main class="mt-5 text-white">
+        <div class="row">
+            <div class="col-md-7 mt-5 mx-auto">
+                <form action="/start" class="glass mb-2" method="post">
+                    <h1>Start Chat</h1>
+                    <div class="form-group mt-3">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control mt-1" id="username" name="username" placeholder="Enter a username" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Start Chat</button>
+                </form>
+            </div>
+            <div class="col-md-7 mt-5 mx-auto">
+                <form action="/join" class="glass mb-2" method="post">
+                    <h1>Join Chat</h1>
+                    <div class="form-group mt-3">
+                        <label for="chat_id">Chat ID</label>
+                        <input type="text" class="form-control mt-1" name="chat_id" id="chat_id" placeholder="Enter a chat id" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="join_username">Username</label>
+                        <input type="text" class="form-control mt-1" name="join_username" id="join_username" placeholder="Enter your username" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Join Chat</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+{% endblock %}

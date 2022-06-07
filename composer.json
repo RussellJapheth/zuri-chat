@@ -2,7 +2,8 @@
     "name": "russell/chat",
     "type": "project",
     "require": {
-        "mikecao/flight": "^2.0"
+        "mikecao/flight": "^2.0",
+        "twig/twig": "^3.4"
     },
     "license": "MIT",
     "authors": [

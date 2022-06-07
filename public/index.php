@@ -43,7 +43,7 @@ Flight::route(
                 unset($data->chats->{$id});
                 file_put_contents(DATABASE_FILE, json_encode($data));
                 unset($_COOKIE['zuri_chat_data']);
-                setcookie('zuri_chat_data', null, -1, '/');
+                setcookie('zuri_chat_data', "", -1, '/');
                 Flight::redirect('/');
             }
         } else {
@@ -115,7 +115,7 @@ Flight::route(
             unset($data->chats->{$id});
             file_put_contents(DATABASE_FILE, json_encode($data));
             unset($_COOKIE['zuri_chat_data']);
-            setcookie('zuri_chat_data', null, -1, '/');
+            setcookie('zuri_chat_data', "", -1, '/');
             Flight::redirect('/');
         } else {
             Flight::redirect('/');

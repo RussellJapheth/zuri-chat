@@ -54,7 +54,9 @@
         </main>
         <script>
             window.setTimeout(function () {
-                if (document.getElementById("message") !== document.activeElement) {
+                let messageElem = document.getElementById("message");
+
+                if (messageElem !== document.activeElement || ! messageElem.value) {
                     window.location.reload();
                 }
             }, 5000);
